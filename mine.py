@@ -9,7 +9,7 @@ from hash_chars import chars
 init()
 
 got_btc = False
-chance = 10000
+chance = 1000000
 
 def generate_hash():
     fake_hash = ""
@@ -24,9 +24,9 @@ def generate_hash():
 
 
 def generate_btc_amount():
-    btc_amount = "0.00"
+    btc_amount = "0.000"
 
-    while len(btc_amount) < 7:
+    while len(btc_amount) < 8:
         btc_char_index = random.randint(0, 9)
         btc_amount_char = chars[btc_char_index]
 
